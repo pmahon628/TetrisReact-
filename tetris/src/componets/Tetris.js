@@ -8,13 +8,13 @@ import Display from  './Display';
 import StartBtn from './StartBtn';
 
 const Tetris = () => {
-return(
+  return (
     <StyledTetrisWrapper>
       <StyledTetris>
-      <Stage stage{ createStage()} />
+      <Stage stage{stage} />
       <aside>
           <div>
-        <Display text="score" />
+        <Display text="Score" />
         <Display text="Rows" />
         <Display text="Level" />
         </div>
@@ -23,6 +23,6 @@ return(
       <StyledTetris>
       </StyledTetrisWrapper>
       );
-};
+ };
 
 export default Tetris;
