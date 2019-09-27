@@ -5,24 +5,24 @@ import {StyledTetrisWrapper, StyledTetris} from './styles/StyledTetris';
 
 import Stage from './Stage';
 import Display from  './Display';
-import StartBtn from './StartBtn';
+import StartButton from './StartBtn';
 
 const Tetris = () => {
   return (
     <StyledTetrisWrapper>
       <StyledTetris>
-      <Stage stage{stage} />
-      <aside>
+        <Stage stage={createStage()} />
+        <aside>
           <div>
-        <Display text="Score" />
-        <Display text="Rows" />
-        <Display text="Level" />
-        </div>
-        <StartBtn />
-      </aside>
-      <StyledTetris>
-      </StyledTetrisWrapper>
-      );
- };
+            <Display text="Score" />
+            <Display text="Rows" />
+            <Display text="Level" />
+          </div>
+          <StartButton />
+        </aside>
+      </StyledTetris>
+    </StyledTetrisWrapper>
+  );
+};
 
 export default Tetris;
