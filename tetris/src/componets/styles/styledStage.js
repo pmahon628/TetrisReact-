@@ -1,6 +1,6 @@
 import styled  from 'styled-components';
 
-export const styledStage = styled.div`
+export const StyledStage = styled.div`
     display: grid;
     grid-template-rows: repeat(
         ${props =>  props.height},
@@ -15,3 +15,4 @@ export const styledStage = styled.div`
    
 
 `
+
