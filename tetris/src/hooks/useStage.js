@@ -6,20 +6,18 @@ export const useStage = (player, resetPlayer) => {
   const [rowsCleared, setRowsCleared] = useState(0);
 
   useEffect(() => {
-      setRowsCleared(0);
-    //   function to check for full rows and get them out
-      const sweepRows = newStage =>
-        newStage.reduce ((ack, row) => {
-            // checks if row has "0"
-            if (row.findIndex(cell => cell[0] === 0) === -1)
-            setRowsCleared(prev => prev + 1);
-            ack.unshift(new Array(newStage[0].lenght).fill([0, 'clear']));
-            return ack;
-            }
-            ack.push(row);
-            return ack;
+    setRowsCleared(0);
 
-        }, [])
+    const sweepRows = newStage =>
+      newStage.reduce((ack, row) => {
+        if (row.findIndex(cell => cell[0] === 0) === -1) {
+          setRowsCleared(prev => prev + 1);
+          ack.unshift(new Array(newStage[0].length).fill([0, 'clear']));
+          return ack;
+        }
+        ack.push(row);
+        return ack;
+      }, [])
 
     const updateStage = prevStage => {
       // First flush the stage
@@ -43,12 +41,11 @@ export const useStage = (player, resetPlayer) => {
         resetPlayer();
         return sweepRows(newStage);
       }
-
       return newStage;
     };
 
     setStage(prev => updateStage(prev));
   }, [player, resetPlayer]);
 
-  return [stage, setStage rowsCleared];
+  return [stage, setStage, rowsCleared];
 };
