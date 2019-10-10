@@ -30,7 +30,6 @@ const Tetris = () => {
   }
 
   const startGame = () => {
-    console.log("test")
     // Reset everything
     setStage(createStage());
     resetPlayer();
@@ -63,10 +62,9 @@ const Tetris = () => {
         movePlayer(1);
       } else if (keyCode === 40) {
         dropPlayer();
-      } else if (keyCode === 38){
-        playerRotate(stage, 1)
+      } else if (keyCode === 38) {
+        playerRotate(stage, 1);
       }
-
     }
   }
 
