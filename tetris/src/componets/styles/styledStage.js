@@ -13,3 +13,5 @@ export const StyledStage = styled.div`
   max-width: 25vw;
   background: #111;
 `;
+
+// Styled Component using  Javascriptt to stlye the stage

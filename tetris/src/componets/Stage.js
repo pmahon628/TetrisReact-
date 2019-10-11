@@ -10,3 +10,6 @@ const Stage = ({ stage }) => (
 );
 
 export default Stage;
+
+
+// this page imports the style, the cell component and maps  over the stage

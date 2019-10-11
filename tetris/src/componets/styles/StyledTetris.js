@@ -24,3 +24,5 @@ export const StyledTetris = styled.div`
             padding:  0 20px;
         }
 `
+
+// Styled Component using  Javascript to style the wrapper and tetris div

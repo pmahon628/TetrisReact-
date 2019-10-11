@@ -7,3 +7,5 @@ const Cell = ({ type }) => (
 )
 
 export default Cell;
+
+// this page imports the css for styles and all the tetrominos

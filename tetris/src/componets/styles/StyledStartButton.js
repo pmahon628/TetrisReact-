@@ -15,3 +15,5 @@ export const StyledStartButton = styled.button`
   outline: none;
   cursor: pointer;
 `
+
+// Styled Component using  Javascript to style the start button

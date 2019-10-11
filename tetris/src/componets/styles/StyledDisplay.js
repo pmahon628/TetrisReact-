@@ -15,3 +15,5 @@ export const StyledDisplay = styled.div`
   font-family: Pixel, Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
 `;
+
+// Styled Component using  Javascriptt to style the diplay component

@@ -6,3 +6,5 @@ const StartButton = ({ callback }) => (
 )
 
 export default StartButton;
+
+// to start the  game - click function that takes in a callback

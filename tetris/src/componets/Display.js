@@ -6,3 +6,5 @@ const Display = ({ gameOver, text }) => (
 )
 
 export default Display;
+
+// this page brings in styles and sets up the display

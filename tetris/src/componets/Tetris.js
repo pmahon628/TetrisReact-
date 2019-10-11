@@ -14,6 +14,7 @@ import Stage from './Stage';
 import Display from './Display';
 import StartButton from './StartButton';
 
+// functions
 const Tetris = () => {
   const [dropTime, setDropTime] = useState(null);
   const [gameOver, setGameOver] = useState(false);
@@ -23,12 +24,14 @@ const Tetris = () => {
 
   console.log('re-render');
 
+  // function to move the tetromonio and checks collision
   const movePlayer = dir => {
     if (!checkCollision(player, stage, { x: dir, y: 0 })) {
       updatePlayerPos({ x: dir, y: 0 });
     }
   }
 
+  // fucntion that starts game
   const startGame = () => {
     // Reset everything
     setStage(createStage());
@@ -36,6 +39,7 @@ const Tetris = () => {
     setGameOver(false);
   }
 
+  // statement that checks for collison of pieces on stage and ends game if they reach the top
   const drop = () => {
     if (!checkCollision(player, stage, { x: 0, y: 1 })) {
       updatePlayerPos({ x: 0, y: 1, collided: false })
@@ -49,11 +53,13 @@ const Tetris = () => {
       updatePlayerPos({ x: 0, y: 0, collided: true });
     }
   }
-
+ 
+  // function that will drop  pieces
   const dropPlayer = () => {
     drop();
   }
 
+  // ability for the pieces to move
   const move = ({ keyCode }) => {
     if (!gameOver) {
       if (keyCode === 37) {
@@ -68,6 +74,7 @@ const Tetris = () => {
     }
   }
 
+  // the ssection brings  in other components and shows what the game looks like
   return (
     <StyledTetrisWrapper role="button" tabIndex="0" onKeyDown={e => move(e)}>
       <StyledTetris>
