@@ -9,3 +9,5 @@ To Run:
 1. - Clone Repo
 2. - run npm install.
 3. Enjoy! - not much to say here, its tetris!  
+
+Enjoy this deployed link as well: (TBA)
