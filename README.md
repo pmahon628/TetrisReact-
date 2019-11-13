@@ -8,7 +8,7 @@ This is my first time using a few different things in react that I have not befo
 To Run:
 1. - Clone Repo
 2. - run npm install.
-3.  - command npm start in the terminal.
+3.  - run command npm start in the terminal.
 4. - use your arrow keys to move tetris blocks.
 3. Enjoy! - not much to say here, its tetris!  
 
