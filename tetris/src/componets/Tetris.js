@@ -14,6 +14,7 @@ import Stage from './Stage';
 import Display from './Display';
 import StartButton from './StartButton';
 
+// sets up variables to be used for game logic
 const Tetris = () => {
   const [dropTime, setDropTime] = useState(null);
   const [gameOver, setGameOver] = useState(false);
@@ -86,6 +87,7 @@ const Tetris = () => {
     drop();
   }, dropTime);
 
+  // moves the various pieces
   const move = ({ keyCode }) => {
     if (!gameOver) {
       if (keyCode === 37) {
