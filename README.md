@@ -12,4 +12,4 @@ To Run:
 4. - use your arrow keys to move tetris blocks.
 3. Enjoy! - not much to say here, its tetris!  
 
-Enjoy this deployed link as well: (TBA)
+Enjoy this deployed link as well: https://desolate-waters-11946.herokuapp.com/
