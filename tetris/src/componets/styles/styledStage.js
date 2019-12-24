@@ -14,4 +14,4 @@ export const StyledStage = styled.div`
   background: #111;
 `;
 
-// Styled Component using  Javascriptt to stlye the stage
+// Styled Component using  Javascript to stlye the stage
