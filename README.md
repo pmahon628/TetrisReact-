@@ -12,4 +12,6 @@ To Run:
 4. - use your arrow keys to move tetris blocks.
 3. Enjoy! - not much to say here, its tetris!  
 
+Oh right, how to play?  Use your arrow keys, -  > down makes the blocks fall faster and up changes their direction while the left and right move the blocks from side to side.
+
 Enjoy this deployed link as well: https://desolate-waters-11946.herokuapp.com/
